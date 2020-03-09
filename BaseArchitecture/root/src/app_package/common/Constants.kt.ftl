@@ -1,4 +1,4 @@
-package ${packageName}
+package ${packageName}.common
 
 class Constants {
     companion object {

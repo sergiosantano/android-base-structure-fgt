@@ -1,4 +1,4 @@
-package ${packageName}.view.customviews.baseviews
+package ${packageName}.common.view.customviews.baseviews
 
 import android.content.Context
 import android.view.View
