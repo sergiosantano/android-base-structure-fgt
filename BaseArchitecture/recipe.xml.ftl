@@ -66,7 +66,7 @@
     <instantiate from="src/app_package/dagger/application/NetworkModule.kt.ftl"
                    to="${escapeXmlAttribute(srcOut)}/dagger/application/NetworkModule.kt" />
 
-    
+
     <instantiate from="src/app_package/dagger/presentation/PresentationComponent.kt.ftl"
                    to="${escapeXmlAttribute(srcOut)}/dagger/presentation/PresentationComponent.kt" />
     
@@ -76,7 +76,13 @@
     <instantiate from="src/app_package/BaseApplication.kt.ftl"
                     to="${escapeXmlAttribute(srcOut)}/BaseApplication.kt"/>
 
+    <instantiate from="src/app_package/common/view/activity/BaseActivityContract.kt.ftl"
+                    to="${escapeXmlAttribute(srcOut)}/common/view/activity/BaseActivityContract.kt" />
+    
     <instantiate from="src/app_package/common/view/activity/BaseActivity.kt.ftl"
                     to="${escapeXmlAttribute(srcOut)}/common/view/activity/BaseActivity.kt" />
+
+    <!-- Open the BaseApplication -->
+    <open file="${srcOut}/BaseApplication.kt" />
 
 </recipe>

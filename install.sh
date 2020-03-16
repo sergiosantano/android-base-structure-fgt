@@ -8,5 +8,8 @@ kill $ANDROID_STUDIO_PROCESS
 # Copy the new FGT
 cp -r ./BaseArchitecture /Applications/Android\ Studio.app/Contents/plugins/android/lib/templates/other
 
+# Wait some seconds
+sleep 3s
+
 # Relaunch AndroidStudio
 open -a /Applications/Android\ Studio.app

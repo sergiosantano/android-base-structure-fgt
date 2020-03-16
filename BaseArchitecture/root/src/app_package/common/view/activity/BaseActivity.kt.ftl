@@ -1,5 +1,6 @@
 package ${packageName}.common.view.activity
 
+import android.os.Bundle
 import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
 import ${packageName}.BaseApplication
@@ -7,7 +8,7 @@ import ${packageName}.dagger.application.ApplicationComponent
 import ${packageName}.dagger.presentation.PresentationComponent
 import ${packageName}.dagger.presentation.PresentationModule
 
-open class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity(), BaseActivityContract {
 
     private var mIsInjectorUsed = false
 
@@ -25,6 +26,13 @@ open class BaseActivity : AppCompatActivity() {
 
     private fun getApplicationComponent(): ApplicationComponent {
         return (application as BaseApplication).getApplicationComponent()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        initDagger()
+        initViews()
+        initViewModel()
     }
 
 }
