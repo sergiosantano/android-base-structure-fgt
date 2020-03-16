@@ -34,6 +34,6 @@ Load the template into your project:
 File -> New -> Other -> Base Structure
 ```
 
-Once the Architecture Structure is added to the project, the `BaseApplication.kt` class will be opened. Uncomment the code and **Build** for generating the Dagger classes.
+Once the Architecture Sturcture is added to the project, the `BaseApplication.kt` class will be opened. Make a **build** for generating the Dagger classes and then uncomment the code in `BaseApplication.kt`.
 
 The Architecture Structure is now ready for being used.
