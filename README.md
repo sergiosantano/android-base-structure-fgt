@@ -34,6 +34,6 @@ Load the template into your project:
 File -> New -> Other -> Base Structure
 ```
 
-Once the Architecture Structure is added to the project, the `BaseApplication.java` class will be opened. Uncomment the code and **Build** for generating the Dagger classes.
+Once the Architecture Structure is added to the project, the `BaseApplication.kt` class will be opened. Uncomment the code and **Build** for generating the Dagger classes.
 
 The Architecture Structure is now ready for being used.
