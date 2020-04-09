@@ -38,20 +38,20 @@
 
 
     <!-- Base views classes -->
-    <instantiate from="src/app_package/common/view/customviews/baseviews/BaseView.kt.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/common/view/customviews/baseviews/BaseView.kt" />
+    <instantiate from="src/app_package/common/view/baseviews/BaseView.kt.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/common/view/baseviews/BaseView.kt" />
 
-    <instantiate from="src/app_package/common/view/customviews/baseviews/BaseObservableView.kt.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/common/view/customviews/baseviews/BaseObservableView.kt" />
+    <instantiate from="src/app_package/common/view/baseviews/BaseObservableView.kt.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/common/view/baseviews/BaseObservableView.kt" />
 
-    <instantiate from="src/app_package/common/view/customviews/baseviews/ObservableViewContract.kt.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/common/view/customviews/baseviews/ObservableViewContract.kt" />
+    <instantiate from="src/app_package/common/view/baseviews/ObservableViewContract.kt.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/common/view/baseviews/ObservableViewContract.kt" />
 
-    <instantiate from="src/app_package/common/view/customviews/baseviews/ViewContract.kt.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/common/view/customviews/baseviews/ViewContract.kt" />
+    <instantiate from="src/app_package/common/view/baseviews/ViewContract.kt.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/common/view/baseviews/ViewContract.kt" />
 
-    <instantiate from="src/app_package/common/view/customviews/ViewFactory.kt.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/common/view/customviews/ViewFactory.kt" />
+    <instantiate from="src/app_package/common/view/ViewFactory.kt.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/common/view/ViewFactory.kt" />
 
     <instantiate from="src/app_package/common/view/ImageProvider.kt.ftl"
                     to="${escapeXmlAttribute(srcOut)}/common/view/ImageProvider.kt" />

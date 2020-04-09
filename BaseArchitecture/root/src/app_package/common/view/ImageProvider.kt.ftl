@@ -8,6 +8,7 @@ import ${packageName}.R
 
 class ImageProvider(private val mActivity: Activity) {
 
+    // TODO: Substitute by the base url for your images
     private val IMAGES_BASE_URL = "https://your_url/img/"
 
     fun loadImage(image: String, target: ImageView) {

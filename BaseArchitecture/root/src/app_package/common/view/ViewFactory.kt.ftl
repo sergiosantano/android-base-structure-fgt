@@ -1,4 +1,4 @@
-package ${packageName}.common.view.customviews
+package ${packageName}.common.view
 
 import android.view.LayoutInflater
 import ${packageName}.common.view.ImageProvider

@@ -1,4 +1,4 @@
-package ${packageName}.common.view.customviews.baseviews
+package ${packageName}.common.view.baseviews
 
 interface ObservableViewContract<DataType, ListenerType> : ViewContract<DataType>{
 
