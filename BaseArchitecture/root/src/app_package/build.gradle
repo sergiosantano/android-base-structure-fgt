@@ -1,0 +1,10 @@
+buildscript {
+    ext {
+        version_glide = "4.11.0"
+        version_swiperefresh = "1.0.0"
+        version_moshi = "1.8.0"
+        version_retrofit = "2.5.0"
+        version_dagger = "2.22.1"
+    }
+}
+
