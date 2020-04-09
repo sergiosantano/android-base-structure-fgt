@@ -1,20 +1,29 @@
 <?xml version="1.0"?>
+<#import "root://other/BaseArchitecture/kotlin_macros.ftl" as kt>
 <recipe>        
-    <!-- Gradle dependencies -->
-    <dependency mavenUrl="com.github.bumptech.glide:glide:4.11.0"/> <!-- Glide -->
-    <dependency mavenUrl="androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"/> <!-- Image Placeholder used with Glide -->
+    <!-- Gradle  -->
+    <@kt.addKaptDependency />
 
-    <dependency mavenUrl="com.squareup.moshi:moshi:1.8.0"/> <!-- Moshi -->
-    <dependency mavenUrl="com.squareup.moshi:moshi-kotlin:1.8.0"/>
+    <merge from="src/app_package/build.gradle"
+            to="${escapeXmlAttribute(gradleOut)}/build.gradle" />
 
-    <dependency mavenUrl="com.squareup.retrofit2:retrofit:2.5.0"/> <!-- Retrofit -->
-    <dependency mavenUrl="com.squareup.retrofit2:converter-moshi:2.5.0"/>
+    <dependency mavenUrl="com.github.bumptech.glide:glide:$version_glide"/> <!-- Glide -->
+    <dependency mavenUrl="androidx.swiperefreshlayout:swiperefreshlayout:$version_swiperefresh"/> <!-- Image Placeholder used with Glide -->
 
-    <dependency mavenUrl="com.google.dagger:dagger:2.22.1"/> <!-- Dagger -->
-    <dependency mavenUrl="com.google.dagger:dagger-android-support:2.22.1"/>
-    <dependency mavenUrl="com.google.dagger:dagger-android-processor:2.22.1" gradleConfiguration="kapt"/>
-    <dependency mavenUrl="com.google.dagger:dagger-compiler:2.22.1" gradleConfiguration="kapt"/>
+    <dependency mavenUrl="com.squareup.moshi:moshi:$version_moshi"/> <!-- Moshi -->
+    <dependency mavenUrl="com.squareup.moshi:moshi-kotlin:$version_moshi"/>
 
+    <dependency mavenUrl="com.squareup.retrofit2:retrofit:$version_retrofit"/> <!-- Retrofit -->
+    <dependency mavenUrl="com.squareup.retrofit2:converter-moshi:$version_retrofit"/>
+
+    <dependency mavenUrl="com.google.dagger:dagger:$version_dagger"/> <!-- Dagger -->
+    <dependency mavenUrl="com.google.dagger:dagger-android-support:$version_dagger"/>
+    <dependency mavenUrl="com.google.dagger:dagger-android-processor:$version_dagger" gradleConfiguration="kapt"/>
+    <dependency mavenUrl="com.google.dagger:dagger-compiler:$version_dagger" gradleConfiguration="kapt"/>
+
+    <!-- AndroidManifest -->
+    <merge from="src/app_package/AndroidManifest.xml.ftl"
+            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml"/>
 
     <!-- Common files -->
     <instantiate from="src/app_package/common/Constants.kt.ftl"
