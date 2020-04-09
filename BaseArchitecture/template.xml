@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<template
+    revision="1"
+    name="Base Structure"
+    minApi="19"
+    minBuildApi="19"
+    description="Creates the base MVVM structure architecture for an Android application.">
+
+    <category value="Other" />
+    <formfactor value="Mobile" />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_blank_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
