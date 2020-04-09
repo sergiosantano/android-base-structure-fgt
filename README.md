@@ -24,11 +24,6 @@ Launch AndroidStudio and create a new project:
 * Do not select _Instant apps_
 * Select _androidx artifacts_
 
-Add to the `app/build.gradle` the kapt plugin and synchronise:
-```
-apply plugin: 'kotlin-kapt'
-```
-
 Load the template into your project:
 ```
 File -> New -> Other -> Base Structure
