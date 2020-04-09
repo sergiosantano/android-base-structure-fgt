@@ -1,4 +1,7 @@
 # File Group Template for Android Architecture ![v1.0.0](https://img.shields.io/badge/version-v1.0.0-blue.svg)
+
+![Header Picture](/img/header.jpg)
+
 This repository contains the code and installation scripts needed for adding a new File Group Template to your Android Studio in order to automatize the creation of the basic architecture components I use to use when developing Android applications. The main aspects of this arquitecure are:
 * Written in Kotlin
 * MVVM (Model-View-ViewModel) architectural pattern
