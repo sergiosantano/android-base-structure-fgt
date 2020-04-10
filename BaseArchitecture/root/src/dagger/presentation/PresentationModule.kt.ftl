@@ -1,11 +1,11 @@
-package ${packageName}.dagger.presentation
+package ${daggerPresentationPackage}
 
 import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import ${packageName}.common.view.ImageProvider
-import ${packageName}.common.viewmodels.ViewModelFactory
-import ${packageName}.common.view.customviews.ViewFactory
+import ${baseViewModelPackage}.ViewModelFactory
+import ${packageName}.common.view.ViewFactory
 import dagger.Module
 import dagger.Provides
 

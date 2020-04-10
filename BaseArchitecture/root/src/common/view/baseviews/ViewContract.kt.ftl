@@ -1,4 +1,4 @@
-package ${packageName}.common.view.baseviews
+package ${baseViewsPackage}
 
 import android.view.View
 

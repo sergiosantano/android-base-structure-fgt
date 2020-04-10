@@ -1,12 +1,11 @@
-package ${packageName}.common.view.activity
+package ${baseActivityPackage}
 
 import android.os.Bundle
 import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
 import ${packageName}.BaseApplication
-import ${packageName}.dagger.application.ApplicationComponent
-import ${packageName}.dagger.presentation.PresentationComponent
-import ${packageName}.dagger.presentation.PresentationModule
+import ${daggerApplicationPackage}.ApplicationComponent
+import ${daggerPresentationPackage}.*
 
 abstract class BaseActivity : AppCompatActivity(), BaseActivityContract {
 

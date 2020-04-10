@@ -1,7 +1,6 @@
 package ${packageName}.common.view
 
 import android.view.LayoutInflater
-import ${packageName}.common.view.ImageProvider
 
 class ViewFactory(private val mLayoutInflater: LayoutInflater, private val imageProvider: ImageProvider) {
 

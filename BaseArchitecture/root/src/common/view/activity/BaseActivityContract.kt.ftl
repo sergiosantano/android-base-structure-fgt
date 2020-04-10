@@ -1,4 +1,4 @@
-package ${packageName}.common.view.activity
+package ${baseActivityPackage}
 
 interface BaseActivityContract {
 
