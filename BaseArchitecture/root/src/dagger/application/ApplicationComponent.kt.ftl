@@ -1,7 +1,6 @@
-package ${packageName}.dagger.application
+package ${daggerApplicationPackage}
 
-import ${packageName}.dagger.presentation.PresentationComponent
-import ${packageName}.dagger.presentation.PresentationModule
+import ${daggerPresentationPackage}.*
 import dagger.Component
 import javax.inject.Singleton
 

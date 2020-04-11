@@ -1,6 +1,6 @@
-package ${packageName}.dagger.application
+package ${daggerApplicationPackage}
 
-import ${packageName}.common.apiservices.ApiRestClient
+import ${apiServicePackage}.ApiRestClient
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

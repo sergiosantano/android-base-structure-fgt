@@ -1,4 +1,4 @@
-package ${packageName}.dagger.presentation
+package ${daggerPresentationPackage}
 
 import dagger.Subcomponent
 

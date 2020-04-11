@@ -1,4 +1,4 @@
-package ${packageName}.common.viewmodels
+package ${baseViewModelPackage}
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
