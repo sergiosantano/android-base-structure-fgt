@@ -8,6 +8,8 @@ This repository contains the code and installation scripts needed for adding a n
 * Usage of Android Architecture Components: ViewModel, LiveData...
 * Usage of Retrofit, Moshi, Dagger2 and Glide
 
+In case you are interested in developing your own template, you might find useful this [article](https://medium.com/@santanoalvarez.sergio/improving-android-development-with-file-group-templates-45e9b1116273) I write explaining the theoretical basis, code samples and benefits.
+
 ## Installation and usage
 
 Clone the repository in your computer:
